@@ -27,6 +27,7 @@ Contributions are always welcome!
 Future Improvements:
 - Dark / Light Mode
 - Search data berdasarkan provinsi, kabupaten / kota, dan kecamatan.
+- Sort data by jenjang pendidikan (SD, SMP, SMA)
 
 
 ## Credits for API Creator
