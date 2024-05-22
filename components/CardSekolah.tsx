@@ -26,7 +26,7 @@ const CardSekolah = ({
     <>
       <div className="rounded bg-gray-800 p-5">
         <div className="flex items-start sm:gap-8">
-          <GraduationCap size={70} opacity={0.75} />
+          <GraduationCap size={70} opacity={0.75} className="hidden sm:flex" />
 
           <div className="w-full">
             <div className="flex items-center gap-3">
@@ -38,30 +38,36 @@ const CardSekolah = ({
               </strong>
             </div>
 
-            <h1 className="mt-3 text-lg font-medium">
+            <h1 className="mt-3 text-base sm:text-lg font-medium">
               <a href="#" className="hover:underline">
                 {" "}
                 {sekolah}{" "}
               </a>
             </h1>
 
-            <div className="mt-1 grid grid-cols-2 w-full gap-3">
+            <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 w-full gap-2 sm:gap-3">
               <span>
-                <p className="text-sm text-gray-300">Provinsi: {propinsi}</p>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Provinsi: {propinsi}
+                </p>
               </span>
               <span>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Kabupaten / Kota: {kabupaten}
                 </p>
               </span>
               <span>
-                <p className="text-sm text-gray-300">NPSN: {npsn}</p>
+                <p className="text-xs sm:text-sm text-gray-300">NPSN: {npsn}</p>
               </span>
               <span>
-                <p className="text-sm text-gray-300">Alamat: {alamat}</p>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Alamat: {alamat}
+                </p>
               </span>
               <span>
-                <p className="text-sm text-gray-300">Kecamatan: {kecamatan}</p>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Kecamatan: {kecamatan}
+                </p>
               </span>
             </div>
           </div>
